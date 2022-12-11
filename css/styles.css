@@ -6,6 +6,7 @@
     --button-active-color: #188CEB; 
     --iconka-links: #AFB1B8;
     --tran: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 h1,
@@ -312,9 +313,8 @@ body{
 
 
 .button-hero:hover,
-.button-hero:focus {
-   color: var(--accent-color);
-   background-color: var(--primary--white-color);
+.button-hero:focus {   
+   background-color: var(--button-active-color);
 }
 
 
@@ -841,15 +841,22 @@ fill: currentColor;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary--white-color);
+    transition: background-color var(--tran);
   }
 
-  .sign-icon {
+ 
+
+  .signup-button:hover,
+  .signup-button:focus {   
+     background-color: var(--button-active-color);
+}
+
+.sign-icon {
     margin-left: 10px;    
     width: 24px;
     height: 24px;
     fill: currentColor;
   }
-
 /*----------------Модалка----------------*/
 
 /* align-self: auto; */
